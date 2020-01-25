@@ -26,11 +26,11 @@ class Matrix:
        
     def row_scale_up(self, row, scalar): #scale up a specific row by a given scalar
         for i in range(0, self.n):
-            matrix[row][i] *= scalar #multiply current element by scalar
+            self.matrix[row][i] *= scalar #multiply current element by scalar
     
-    def row_scale_down(self, index, scalar): #scale down a specific row by given scalar
+    def row_scale_down(self, row, scalar): #scale down a specific row by given scalar
         for i in range(0, self.n):
-            matrix[row][i] /= scalar #divide current element by scalar
+            self.matrix[row][i] /= scalar #divide current element by scalar
 
     def print_matrix(self): #print matrix, only works well with 1 digit numbers
         out = ""    #initialize out string for matrix contents
